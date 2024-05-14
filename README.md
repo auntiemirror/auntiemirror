@@ -1,12 +1,15 @@
-# Hi there, I'm AuntieMirror! 👋
+AccountTest:
+This is a test class written in Java using JUnit, a popular testing framework.
+It imports necessary packages for testing and assertions.
+The class contains a setup method annotated with @BeforeEach, which means it runs before each test method execution. In this method, it initializes a Customer object and an Account object using some predefined data.
+The testCreate method is annotated with @Test, indicating it's a test method. It tests the creation of an Account object.
+Inside the testCreate method, it checks various assertions using assertEquals and assertFalse to verify if the Account object is created correctly.
 
-- 👀 I’m interested in programming C and Java.
-- 🌱 I’m currently learning software engineering.
-- 💞️ I’m looking to collaborate on coding projects.
-- 📫 How to reach me: You can email me at 2631280870@qq.com.
-- 😄 Pronouns: Diligent and eager to lear
-
-<!---
-auntiemirror/auntiemirror is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Account:
+This is a class representing an account in a banking system.
+It has fields such as accNo, pin, customer, balance, overDraftLimit, isSuspended, isActive, and noticeNeeded, representing different properties of an account.
+The constructor initializes the account with an account number and a customer object, setting the balance to 0 and generating a PIN for the account.
+It has methods to access account details such as getAccNo(), getCustomer(), getBalance(), and getPin().
+There's a private method generatePin() to generate a random PIN for the account.
+The isSuspended() method returns a boolean indicating whether the account is suspended or not.
+In summary, the Account class provides a blueprint for creating account objects, and the AccountTest class contains test cases to ensure that accounts are created correctly with expected properties.
